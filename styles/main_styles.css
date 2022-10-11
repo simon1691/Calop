@@ -516,7 +516,7 @@ footer, footer a { color: var(--white-txt-color); }
     background-repeat: no-repeat;
     background-image: url("../imgs/image-1.png");
     height: 100%;
-    width: 45%;
+    width: 50%;
     bottom: -160px;
     right: 0;
 }
