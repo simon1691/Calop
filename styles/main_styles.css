@@ -514,7 +514,7 @@ footer, footer a { color: var(--white-txt-color); }
     position: absolute;
     animation: bgHero 30s ease-in-out infinite;
     background-repeat: no-repeat;
-    background-image: url("/imgs/image-1.png");
+    background-image: url("../imgs/image-1.png");
     height: 100%;
     width: 45%;
     bottom: -160px;
@@ -523,18 +523,18 @@ footer, footer a { color: var(--white-txt-color); }
 
 @keyframes bgHero {
     0%, 25% {
-        background-image: url("/imgs/image-1.png");
+        background-image: url("../imgs/image-1.png");
     }
 
     27%, 48% {
-        background-image: url("/imgs/image-2.png");
+        background-image: url("../imgs/image-2.png");
     }
 
     51%, 72% {
-        background-image: url('/imgs/image-3.png');
+        background-image: url('../imgs/image-3.png');
     }
 
     75%, 100%{
-        background-image: url('/imgs/image-4.png');
+        background-image: url('../imgs/image-4.png');
     }
 }
