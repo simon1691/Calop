@@ -542,7 +542,7 @@ footer, footer a { color: var(--white-txt-color); }
 
 .operations-animation {
     animation: operationsHero 30s ease-in-out infinite;
-    background-image: url("/imgs/operations-3.png");
+    background-image: url("../imgs/operations-3.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -552,15 +552,15 @@ footer, footer a { color: var(--white-txt-color); }
 
 @keyframes operationsHero {
     0%, 30% {
-        background-image: url("/imgs/operations-3.png");
+        background-image: url("../imgs/operations-3.png");
     }
 
     33%, 63% {
-        background-image: url("/imgs/operations-2.png");
+        background-image: url("../imgs/operations-2.png");
     }
 
     66%, 100% {
-        background-image: url('/imgs/operations-1.png');
+        background-image: url('../imgs/operations-1.png');
     }
 }
 
