@@ -828,7 +828,10 @@ footer, footer a { color: var(--white-txt-color); }
 
     .hero-btns { flex-direction: column; }
 
-    .hero-btns .hero-btn { justify-content: center !important;}
+    .hero-btns .hero-btn { 
+        justify-content: center !important;
+        width: 100%;
+    }
 
     .operations-page .hero-title,
     .operations-page .section-title {font-size: 2.5rem;}
