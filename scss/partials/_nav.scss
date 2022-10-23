@@ -1,0 +1,56 @@
+.nav {
+    &-link {
+        font-size: var(--fnt-sm);
+        list-style: none;
+        padding: 3rem 2rem;
+        position: relative;
+        text-transform: uppercase;
+
+        a {
+            color: var(--white-txt-color) !important;
+            text-decoration: none;
+
+            &:hover {
+                color: white !important;
+                font-weight: 700;
+            }
+            &::before {
+                background-color: var(--accent-color);
+                border-radius: 1rem;
+                content: "";
+                display: block;
+                height: 0.2rem;
+                left: 10%;
+                position: absolute;
+                transform: scaleX(0);
+                transform-origin: center;
+                transition: transform 150ms ease;
+                top: 40px;
+                width: 80%;
+            }
+            &:hover::before {
+                transform: scaleX(1);
+                transform-origin: center;
+            }
+        }
+    }
+
+    &-check-burger-icon { opacity: 0; }
+
+    &-quote-btn {
+        border: #FACC2D 3px solid;
+        border-radius: .5rem;
+        color: var(--white-txt-color) !important;
+        list-style: none;
+        margin-left: 1rem;
+        padding: 0.5rem 1rem;
+        transition: background-color 200ms ease-in-out;
+        text-decoration: none;
+
+        &:hover {
+            background-color: var(--accent-color);
+            color: black !important;
+            font-weight: 700;
+        }
+    }
+}
