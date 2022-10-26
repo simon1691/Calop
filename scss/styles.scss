@@ -4,6 +4,7 @@
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 
     /* MISC */
+    
     @import './misc/variables';
     @import './misc/normalize';
     @import './misc/animations';
@@ -13,7 +14,9 @@
     @import './partials/footer';
 
    /* Pages */
-   @import './pages/index';
+   @import './pages/global';
+   @import './pages/index_header';
+   @import './pages/operations';
 
 
     /*Media Queries*/

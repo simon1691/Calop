@@ -325,7 +325,7 @@ footer, footer a { color: var(--white-txt-color); }
 .footer-icon-social svg { fill: white;} */
 
 /*services page*/
-.services-page .hero-title {
+/* .services-page .hero-title {
     font-size: var(--fnt-lg);
     margin-bottom: 0.3rem;
 }
@@ -375,7 +375,7 @@ footer, footer a { color: var(--white-txt-color); }
 .services-page .countries-container {
     padding: 6rem 0 0;
     gap: 4rem;
-}
+} */
 
 .contact-service-section{ 
     padding-top: 9rem !important;
@@ -559,7 +559,7 @@ footer, footer a { color: var(--white-txt-color); }
     }
 }
 
-
+/* 
 @media (min-width: 1440px) {
 
 .contact-service-container {
@@ -568,7 +568,7 @@ footer, footer a { color: var(--white-txt-color); }
 }
 }
 /* responsive */ 
-@media (max-width: 1024px) {
+/* @media (max-width: 1024px) {
 
     .bg-animation { background-position-x: -50%; }
 
@@ -612,11 +612,9 @@ footer, footer a { color: var(--white-txt-color); }
         max-width: 100% !important;
         width: 80%;
     }
+} */
 
-    /* .row.contact-service-container.w-75 {width: 100% !important;} */
-}
-
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
 
     .bg-animation { display: none; }
 
@@ -650,9 +648,9 @@ footer, footer a { color: var(--white-txt-color); }
         width: 80%;
         margin: auto !important;
     }
-}
+} */
 
-@media (max-width: 767px) {
+/* @media (max-width: 767px) {
     .container-fluid.sticky-top.bg-black {padding: 0rem;}
 
     .container.nav {max-width: 100% !important;}
@@ -678,7 +676,7 @@ footer, footer a { color: var(--white-txt-color); }
         fill: white;
         width: 40px;
     }
-    .check-burger-icon {
+    .nav-check-burger-icon {
         position: absolute;
         width: 40px;
         top: 35px;
@@ -791,9 +789,9 @@ footer, footer a { color: var(--white-txt-color); }
             transform: translateY(-600px);
         }
     }
-}
+} */
 
-@media (max-width: 560px) {
+/* @media (max-width: 560px) {
     footer {
         flex-direction: column;
         align-items: center;
@@ -807,8 +805,8 @@ footer, footer a { color: var(--white-txt-color); }
     }
 
     .footer-social-container .footer-icon-social{ margin-right: 0 !important;     }
-}
-
+} */
+/* 
 @media screen and (min-width: 0) and (max-width:465px) {
 
     .section-padding-y {
@@ -853,4 +851,4 @@ footer, footer a { color: var(--white-txt-color); }
             transform: translateY(-780px);
         }
     }
-}
+} */

@@ -1,84 +1,14 @@
 /* Index Header */
 
 header {
-    position: relative;
-
-    .index-hero-container {
-        min-height: 80vh;
-
-        .index-hero{
-            height: 80vh;
-            overflow: hidden;
-            position: relative;
-
-            &-title{
-                color: #fff;
-                cursor: pointer;
-                font-size: 3.5rem;
-                line-height: 3.5rem;
-                letter-spacing: 0.15rem;
-            }
-
-            &-subtitle {
-                font-size: var(--fnt-lg);
-                letter-spacing: 0.5rem;
-                line-height: 2rem;
-                margin-bottom: 1rem;
-            }
-
-            &-paragraph {
-                font-size: var(--fnt-md);
-                letter-spacing: 0.08rem;
-                line-height: 150%;
-                margin-top: 1.3rem;
-                width: 40rem;
-            }
-
-            &-btns  {
-                gap: 2.5rem;
-
-                .index-hero-btn {
-                    background-color: white;
-                    color: var(--primary-color);
-                    font-size: var(--fnt-md);
-                    overflow: hidden;
-                    transform: scaleX(1);
-                    z-index: 1;
-
-                    &:hover,
-                    &:active,
-                    &:focus {
-                        border: 1px solid #95C11F !important;
-                        font-weight: bold;
-                    }
-
-                    &:focus { box-shadow: 0 0 0 0.25rem rgba(50, 250, 0, 0.25) !important; }
-
-                    .arrow-icon { width: 10px;
-                        svg { fill: white; }
-                    }
-                }
-            }
-
-            &-animation {
-                height: 70px;
-                margin-top: 1rem;
-                overflow: hidden;
-                width: 900px;
-
-                h1 {
-                    color: var(--accent-color);
-                    font-size: 4.2rem;
-                    font-weight: 900;
-                    line-height: 4.2rem;
-                    padding-bottom: 1.5rem;
-                }
-            }
-
-        }
-
+    .hero-title {
+        font-size: $fnt-xxl;
+        line-height: $fnt-xxl;
+        cursor: pointer;
+        letter-spacing: 0.15rem;
+        color: #fff;
+        width: 65%;
     }
-
 }
 
 main {
@@ -88,13 +18,13 @@ main {
     .arrow-circle-icon svg { fill: white; }
 
     .section-title {
-        font-size: var(--fnt-xl);
+        font-size: $fnt-xl;
         margin-bottom: 6rem;
         text-align: center;
 
         &::before {
             content: "";
-            background-color: var(--accent-color);
+            background-color: $accent-color;
             display: inline-block;
             height: 3rem;
             margin-right: 1rem;
@@ -122,13 +52,13 @@ main {
             }
 
             &-btn {
-                font-size: var(--fnt-md);
+                font-size: $fnt-md;
                 overflow: hidden;
                 position: relative;
                 z-index: 1;
 
                 &::before {
-                    background-color: var(--secondary-color);
+                    background-color: $secondary-color;
                     bottom: 0;
                     content: "";
                     left: 0;
@@ -158,7 +88,7 @@ main {
     }
 
     .services {
-        background-color: var(--light-gray-color);
+        background-color: $light-gray-color;
 
         &-container {
             grid-template-columns:repeat(15, 1fr);
@@ -166,7 +96,7 @@ main {
 
             article {
                 border-radius: 0.8rem;
-                background-color: var(--white-txt-color);
+                background-color: $white-txt-color;
                 display: flex;
                 flex-direction: column;
                 justify-content: space-between;
@@ -182,7 +112,7 @@ main {
                 }
 
                 .service-btn:hover {
-                    color: var(--secondary-color) !important
+                    color: $secondary-color !important
                 }
             }
 
@@ -217,13 +147,13 @@ main {
         .flag-icon { width: 50px; }
 
         &-btn {
-            font-size: var(--fnt-md);
+            font-size: $fnt-md;
             overflow: hidden;
             position: relative;
             z-index: 1;
 
             &::before {
-                background-color: var(--secondary-color);
+                background-color: $secondary-color;
                 bottom: 0;
                 content: "";
                 left: 0;

@@ -1,13 +1,13 @@
 .nav {
     &-link {
-        font-size: var(--fnt-sm);
+        font-size: $fnt-sm;
         list-style: none;
         padding: 3rem 2rem;
         position: relative;
         text-transform: uppercase;
 
         a {
-            color: var(--white-txt-color) !important;
+            color: $white-txt-color !important;
             text-decoration: none;
 
             &:hover {
@@ -15,7 +15,7 @@
                 font-weight: 700;
             }
             &::before {
-                background-color: var(--accent-color);
+                background-color: $accent-color;
                 border-radius: 1rem;
                 content: "";
                 display: block;
@@ -39,8 +39,9 @@
 
     &-quote-btn {
         border: #FACC2D 3px solid;
+        background-color: $primary-color;
         border-radius: .5rem;
-        color: var(--white-txt-color) !important;
+        color: $white-txt-color !important;
         list-style: none;
         margin-left: 1rem;
         padding: 0.5rem 1rem;
@@ -48,7 +49,7 @@
         text-decoration: none;
 
         &:hover {
-            background-color: var(--accent-color);
+            background-color: $accent-color;
             color: black !important;
             font-weight: 700;
         }

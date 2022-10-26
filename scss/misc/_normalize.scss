@@ -12,18 +12,18 @@ a:active,
 a:visited,
 a:focus { color: inherit !important; }
 
-.white { color: var(--white-txt-color) }
-.accent { color: var(--accent-color) }
+.white { color: $white-txt-color; }
+.accent { color: $accent-color; }
 
-.bg-gray { background-color: var(--light-gray-color);}
-.bg-black { background-color: var(--primary-color);}
+.bg-gray { background-color: $light-gray-color;}
+.bg-black { background-color: $primary-color;}
 
 .fw-light { font-weight: 300 }
 .fw-regular { font-weight: 400 }
 .fw-medium { font-weight: 500 }
 .fw-bold { font-weight: 700 }
 
-.txt-danger { color: var(--danger-txt-color);}
+.txt-danger { color: $danger-txt-color;}
 
 .gap-xs { gap: 1rem;}
 .gap-sm { gap: 2rem}
@@ -37,11 +37,11 @@ a:focus { color: inherit !important; }
 .btn {
     border: none !important;
     border-radius: 0.3rem !important;
-    color: var(--white-txt-color) !important;
+    color: $white-txt-color !important;
     cursor: pointer;
     padding: 1rem 1.5rem !important;
 }
-.primary-btn { background-color: var(--primary-color) !important; }
+.primary-btn { background-color: $primary-color !important; }
 
 .secondary-btn {
     background-color: transparent !important;

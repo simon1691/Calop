@@ -3,9 +3,10 @@
 .txt-animation {
     animation: testHero 15s ease-in-out infinite;
     max-width: 900px;
+
+    &:hover { animation-play-state: paused; }
 }
 
-.txt-animation:hover { animation-play-state: paused; }
 @keyframes testHero {
     0% {
         transform: translateY(85px);
@@ -62,8 +63,8 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    min-height: 50vh;
     height: 55vh;
+    min-height: 50vh;
 }
 
 @keyframes operationsHero {

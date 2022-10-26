@@ -1,7 +1,7 @@
 .footer {
-    a { color: var(--white-txt-color); }
+    a { color: $white-txt-color; }
 
-    &-title { color: var(--accent-color); }
+    &-title { color: $accent-color; }
 
     &-icon,
     &-icon-social {
