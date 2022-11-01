@@ -1,4 +1,9 @@
 .nav {
+
+    .dropdown {
+        .dropdown-toggle::after {  color: $accent-color !important; }
+    }
+
     &-link {
         font-size: $fnt-sm;
         list-style: none;
@@ -6,32 +11,79 @@
         position: relative;
         text-transform: uppercase;
 
+        .dropdown-menu {
+            background-color: rgba(48, 48, 48,  0.97) !important;
+            border-radius:0px !important;
+            left: -6px !important;
+            top: 12px !important;
+            width: 250px;
+
+
+            li {
+                position:relative !important;
+
+                a {
+                    background-color:transparent !important;
+
+                    &:hover {
+                        color: white !important;
+                        font-weight: 700;
+                    }
+                    &::before {
+                        background-color: $accent-color;
+                        border-radius: 1rem;
+                        content: "";
+                        display: block;
+                        height: 0.2rem;
+                        left: 10%;
+                        position: absolute !important;
+                        transform: scaleX(0);
+                        transform-origin: center;
+                        transition: transform 150ms ease;
+                        top: 30px;
+                        width: 80%;
+                    }
+                    &:hover::before {
+                        transform: scaleX(1);
+                        transform-origin: center;
+                    }
+                }
+            }
+            
+        }
+
+        &:hover {
+            color: white !important;
+            font-weight: 700;
+        }
+        &::before {
+            background-color: $accent-color;
+            border-radius: 1rem;
+            content: "";
+            display: block;
+            height: 0.2rem;
+            left: 10%;
+            position: absolute;
+            transform: scaleX(0);
+            transform-origin: center;
+            transition: transform 150ms ease;
+            top: 40px;
+            width: 80%;
+        }
+        &:hover::before {
+            transform: scaleX(1);
+            transform-origin: center;
+        }
+
         a {
             color: $white-txt-color !important;
             text-decoration: none;
+        }
+        .arrow-icon-service {
+            width: 10px;
+            transform: rotate(90deg);
 
-            &:hover {
-                color: white !important;
-                font-weight: 700;
-            }
-            &::before {
-                background-color: $accent-color;
-                border-radius: 1rem;
-                content: "";
-                display: block;
-                height: 0.2rem;
-                left: 10%;
-                position: absolute;
-                transform: scaleX(0);
-                transform-origin: center;
-                transition: transform 150ms ease;
-                top: 40px;
-                width: 80%;
-            }
-            &:hover::before {
-                transform: scaleX(1);
-                transform-origin: center;
-            }
+            svg { fill: white; }
         }
     }
 

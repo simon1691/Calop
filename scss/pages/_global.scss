@@ -14,8 +14,12 @@ header {
 main {
     .arrow-circle-icon { width: 15px; }
 
+    .arrow-icon,
+    .arrow-icon-service { width: 10px; }
+
     .arrow-icon svg,
-    .arrow-circle-icon svg { fill: white; }
+    .arrow-circle-icon svg,
+    .arrow-icon-service svg { fill: white; }
 
     .section-title {
         font-size: $fnt-xl;
@@ -86,6 +90,43 @@ main {
             }
         }
     }
+
+    .contact-service-section{
+        padding-top: 9rem !important;
+        padding-bottom: 9rem !important;
+
+        .contact-service-container {
+            background-color: $primary-color;
+            border-radius: 1.5rem;
+            padding: 5rem 3rem;
+            color: $white-txt-color;
+
+            & p {
+                font-size: $fnt-lg;
+                margin: 0;
+            }
+
+            .contact-service-icon {
+                width: 100px;
+                height: 100px;
+                border-radius: 50%;
+                background-color: $secondary-color;
+
+                svg {
+                    width: 50px;
+                    height: 50px;
+                }
+            }
+
+            .contact-service-btn {
+                max-width: 150px;
+                background-color: $secondary-color !important;
+                padding: 1rem 1.5rem !important;
+            }
+        }
+    }
+
+    
 
     .services {
         background-color: $light-gray-color;

@@ -80,3 +80,29 @@
         background-image: url('../imgs/operations-1.png');
     }
 }
+
+/* aboutUs Header Animation*/
+.aboutUs-animation {
+    animation: aboutUsHero 30s ease-in-out infinite;
+    background-image: url("../imgs/aboutUs3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 55vh;
+    min-height: 50vh;
+}
+
+@keyframes aboutUsHero {
+    0%, 30% {
+        background-image: url("../imgs/aboutUs3.png");
+    }
+
+    33%, 63% {
+        background-image: url("../imgs/aboutUs2.png");
+    }
+
+    66%, 100% {
+        background-image: url('../imgs/aboutUs1.png');
+    }
+}
+
