@@ -1,0 +1,82 @@
+
+.about-page {
+    header {
+        .hero-title { line-height: 3.88rem; }
+    }
+
+    main {
+        .dept-section-grid {
+            grid-template-columns: 1fr 3fr;
+            gap: 3rem;
+
+            .test{
+                display: none;
+            }
+
+            .dept-menu {
+                li {
+                    margin-bottom: 2rem;
+                    font-size: $fnt-lg;
+
+                    .about-member-btn {
+                        position: relative;
+                        border:none;
+                        background-color: transparent;
+
+                        &:hover { font-weight:bold; }
+
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            bottom:-4px;
+                            width:100%;
+                            height: 3px;
+                            background-color: $accent-color;
+                            transform: scaleX(0);
+                            transform-origin: left;
+
+                            transition: transform 150ms ease;
+                        }
+
+                        &:hover::before {
+                            transform: scaleX(1);
+                        }
+                    }
+                }
+            }
+
+            .dept-members-container {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                gap: 3rem 6rem;
+
+                .dept-member {
+                    gap: 1rem 0;
+
+                    .member-img{
+                        background-color: $light-gray-color;
+                        width: 100%;
+                        height:400px;
+                        object-fit: cover;
+                        object-position: top center;
+                    }
+                    .member-info {
+                        gap: 1rem;
+
+                        h3{
+                            margin-top: 0rem;
+                            margin-bottom: 0.2rem;
+                            font-size: $fnt-lg;
+                        }
+
+                        h4{
+                            margin:0;
+                            font-size: $fnt-sm;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+

@@ -1,0 +1,30 @@
+/* Imports*/
+
+    /* Font imported */
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+
+    /* MISC */
+    
+    @import './misc/variables';
+    @import './misc/normalize';
+    @import './misc/animations';
+
+    /*Partials*/
+    @import './partials/nav';
+    @import './partials/footer';
+
+   /* Pages */
+   @import './pages/global';
+   @import './pages/index_header';
+   @import './pages/services';
+   @import './pages/operations';
+
+   @import './pages/aboutUs';
+
+
+    /*Media Queries*/
+    @import './misc/mediaQueries';
+
+
+
+
