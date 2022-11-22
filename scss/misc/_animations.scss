@@ -56,15 +56,19 @@
         background-image: url('../imgs/image-4.png');
     }
 }
-/* Operations Header Animation*/
-.operations-animation {
-    animation: operationsHero 30s ease-in-out infinite;
-    background-image: url("../imgs/operations-3.png");
+
+@mixin header-animation-setup {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     height: 55vh;
     min-height: 50vh;
+}
+/* Operations Header Animation*/
+.operations-animation {
+    animation: operationsHero 30s ease-in-out infinite;
+    background-image: url("../imgs/operations-3.png");
+    @include header-animation-setup;
 }
 
 @keyframes operationsHero {
@@ -85,11 +89,7 @@
 .aboutUs-animation {
     animation: aboutUsHero 30s ease-in-out infinite;
     background-image: url("../imgs/aboutUs3.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: 55vh;
-    min-height: 50vh;
+    @include header-animation-setup;
 }
 
 @keyframes aboutUsHero {
