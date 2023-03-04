@@ -1,0 +1,92 @@
+.services-pages {
+
+    .services-pargraph {
+        font-size: $fnt-md;
+    }
+
+    .img-service {
+        border-radius: 15px;
+        object-fit: cover;
+        height: 400px;
+    }
+
+    .service-text {
+        font-size: $fnt-md;
+        position: relative;
+
+        &::after {
+            content: "";
+            background-color: $accent-color;
+            height: 80%;
+            position: absolute;
+            top:50%;
+            transform: translate(-1px, -50%);
+            width: 4px;
+        }
+    }
+    
+    main{
+
+        .services {
+
+            &-container {
+                grid-template-columns:repeat(12, 1fr);
+                gap:2.5rem;
+
+                .services-service-1 {
+                    grid-column-start: 1;
+                    grid-column-end: 4;
+                }
+        
+                .services-service-2 {
+                    grid-column-start: 4;
+                    grid-column-end: 7;
+                }
+        
+                .services-service-3 {
+                    grid-column-start: 7;
+                    grid-column-end: 10;
+                }
+        
+                .services-service-4 {
+                    grid-column-start: 10;
+                    grid-column-end: 13;
+                }
+            }
+        }
+        
+    }
+}
+
+.ftl,
+.ltl,
+.drayage,
+.expedite,
+.lmd {
+    header {
+        background-size: cover;
+        background-position: top right;
+        background-repeat: no-repeat;
+        height: 50vh;
+        min-height: 35vh;
+    }
+}
+.ftl {
+    header { background-image: url("../imgs/ftl-header.jpg"); }
+}
+
+.ltl {
+    header { background-image: url("../imgs/ltl-header.png"); }
+}
+
+.drayage {
+    header { background-image: url("../imgs/drayage-header.png"); }
+}
+
+.expedite {
+    header { background-image: url("../imgs/expedite-header.jpg"); }
+}
+
+.lmd {
+    header { background-image: url("../imgs/lmd-header.png"); }
+}

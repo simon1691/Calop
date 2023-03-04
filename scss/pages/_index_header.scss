@@ -1,0 +1,92 @@
+/* Index Header */
+
+header {
+    position: relative;
+
+    .hero-title {
+        font-size: $fnt-xxl;
+        line-height: $fnt-xxl;
+        cursor: pointer;
+        letter-spacing: 0.15rem;
+        color: #fff;
+    }
+
+    .index-hero-container {
+        min-height: 80vh;
+
+        .index-hero{
+            height: 80vh;
+            overflow: hidden;
+            position: relative;
+
+            &-title{
+                color: #fff;
+                cursor: pointer;
+                font-size: 3.5rem;
+                line-height: 3.5rem;
+                letter-spacing: 0.15rem;
+            }
+
+            &-subtitle {
+                font-size: $fnt-lg;
+                letter-spacing: 0.5rem;
+                line-height: 2rem;
+                margin-bottom: 1rem;
+            }
+
+            &-paragraph {
+                font-size: $fnt-md;
+                letter-spacing: 0.08rem;
+                line-height: 150%;
+                margin-top: 1.3rem;
+                width: 40rem;
+            }
+
+            &-btns  {
+                gap: 2.5rem;
+
+                .index-hero-btn {
+                    background-color: white;
+                    color: $primary-color;
+                    font-size: $fnt-md;
+                    overflow: hidden;
+                    transform: scaleX(1);
+                    z-index: 1;
+
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        border: 1px solid #95C11F !important;
+                        font-weight: bold;
+                    }
+
+                    &:focus { box-shadow: 0 0 0 0.25rem rgba(50, 250, 0, 0.25) !important; }
+
+                    .arrow-icon { width: 10px;
+                        svg { fill: white; }
+                    }
+                }
+            }
+
+            &-animation {
+                height: 70px;
+                margin-top: 1rem;
+                overflow: hidden;
+                width: 900px;
+
+                h1 {
+                    color: $accent-color;
+                    cursor: pointer;
+                    font-size: 4.2rem;
+                    font-weight: 900;
+                    letter-spacing: 0.15rem;
+                    line-height: 4.2rem;
+                    padding-bottom: 1.5rem;
+                }
+            }
+
+        }
+
+    }
+
+}

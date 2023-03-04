@@ -1,0 +1,14 @@
+.footer {
+    a { color: $white-txt-color; }
+
+    &-title { color: $accent-color; }
+
+    &-icon,
+    &-icon-social {
+        svg { fill: white;}
+    }
+
+    &-icon { width: 25px; }
+
+    &-footer-icon-social { width: 43px; }
+}
