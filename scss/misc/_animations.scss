@@ -11,20 +11,17 @@
     0% {
         transform: translateY(85px);
     }
-    2%, 24% {
+    2%, 30% {
         transform: translateY(0);
     }
-    27%, 48% {
+    33%, 63% {
         transform: translateY(-85px);
     }
-    51%, 72% {
+    66%,  97% {
         transform: translateY(-170px);
     }
-    75%, 98% {
+    100% {
         transform: translateY(-255px);
-    }
-    100%{
-        transform: translateY(-340px);
     }
 }
 /* Index Header animation*/
