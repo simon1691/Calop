@@ -90,7 +90,7 @@
     &-check-burger-icon { opacity: 0; }
 
     &-quote-btn {
-        border: #FACC2D 3px solid;
+        border:3px solid $accent-color;
         background-color: $primary-color;
         border-radius: .5rem;
         color: $white-txt-color !important;
