@@ -109,13 +109,11 @@ a:focus {
   width: 50%; }
 
 @keyframes bgHero {
-  0%, 25% {
+  0%, 28% {
     background-image: url("../imgs/image-1.png"); }
-  27%, 48% {
-    background-image: url("../imgs/image-2.png"); }
-  51%, 72% {
+  33%, 61% {
     background-image: url("../imgs/image-3.png"); }
-  75%, 100% {
+  66%, 100% {
     background-image: url("../imgs/image-4.png"); } }
 
 /* Operations Header Animation*/
