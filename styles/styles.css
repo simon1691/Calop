@@ -622,6 +622,10 @@ header {
     width: 100%;
     left: 0%;
     top: 64px; }
+  .services-pages.expedite header {
+    background-position: bottom left; }
+  .services-pages.ltl header {
+    background-position: bottom left; }
   header .bg-animation {
     display: none; }
   header .index-hero-container {

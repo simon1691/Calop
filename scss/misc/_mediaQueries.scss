@@ -67,7 +67,6 @@
 }
 
     @media (max-width: 768px) {
-
         .nav {
             .nav-link {
                 a {
@@ -78,6 +77,13 @@
                     }
                 }
             }
+        }
+
+        .services-pages.expedite {
+            header { background-position: bottom left;}
+        }
+        .services-pages.ltl {
+            header { background-position: bottom left;}
         }
 
         header {
@@ -428,10 +434,9 @@
         .order-bottom {order: 1;}
 
         .order-bottom {order: 2;}
-
         //services pages
         .services-pages {
-
+            
             header {
                 background-position: center center;
                 .hero-title {
