@@ -508,7 +508,7 @@ header {
 .expedite header,
 .lmd header {
   background-size: cover;
-  background-position: top right;
+  background-position: center right;
   background-repeat: no-repeat;
   height: 50vh;
   min-height: 35vh; }
