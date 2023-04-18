@@ -523,7 +523,8 @@ header {
   background-image: url("../imgs/drayage-header.png"); }
 
 .expedite header {
-  background-image: url("../imgs/expedite-header.jpg"); }
+  background-image: url("../imgs/expedite-header.jpg");
+  background-position: center; }
 
 .lmd header {
   background-image: url("../imgs/lmd-header.png"); }
@@ -622,8 +623,6 @@ header {
     width: 100%;
     left: 0%;
     top: 64px; }
-  .services-pages.expedite header {
-    background-position: bottom left; }
   .services-pages.ltl header {
     background-position: bottom left; }
   header .bg-animation {

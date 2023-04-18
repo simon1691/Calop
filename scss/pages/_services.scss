@@ -84,7 +84,10 @@
 }
 
 .expedite {
-    header { background-image: url("../imgs/expedite-header.jpg"); }
+    header {
+        background-image: url("../imgs/expedite-header.jpg");
+        background-position: center;
+    }
 }
 
 .lmd {
