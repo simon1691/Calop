@@ -109,13 +109,11 @@ a:focus {
   width: 50%; }
 
 @keyframes bgHero {
-  0%, 25% {
+  0%, 28% {
     background-image: url("../imgs/image-1.png"); }
-  27%, 48% {
-    background-image: url("../imgs/image-2.png"); }
-  51%, 72% {
+  33%, 61% {
     background-image: url("../imgs/image-3.png"); }
-  75%, 100% {
+  66%, 100% {
     background-image: url("../imgs/image-4.png"); } }
 
 /* Operations Header Animation*/
@@ -289,6 +287,9 @@ main .section-title {
     position: relative;
     top: 0.3rem;
     width: 0.5rem; }
+
+main form.test {
+  background-color: red !important; }
 
 main .get-quote .form-filed-row {
   margin-bottom: 0.5rem; }
@@ -507,7 +508,7 @@ header {
 .expedite header,
 .lmd header {
   background-size: cover;
-  background-position: top right;
+  background-position: center right;
   background-repeat: no-repeat;
   height: 50vh;
   min-height: 35vh; }
@@ -522,7 +523,8 @@ header {
   background-image: url("../imgs/drayage-header.png"); }
 
 .expedite header {
-  background-image: url("../imgs/expedite-header.jpg"); }
+  background-image: url("../imgs/expedite-header.jpg");
+  background-position: center; }
 
 .lmd header {
   background-image: url("../imgs/lmd-header.png"); }
@@ -621,6 +623,8 @@ header {
     width: 100%;
     left: 0%;
     top: 64px; }
+  .services-pages.ltl header {
+    background-position: bottom left; }
   header .bg-animation {
     display: none; }
   header .index-hero-container {
@@ -882,16 +886,14 @@ ul.nav-links {
   @keyframes testHero {
     0% {
       transform: translateY(145px); }
-    2%, 24% {
+    2%, 30% {
       transform: translateY(0px); }
-    27%, 48% {
+    33%, 63% {
       transform: translateY(-150px); }
-    51%, 72% {
+    66%, 97% {
       transform: translateY(-300px); }
-    75%, 98% {
-      transform: translateY(-450px); }
     100% {
-      transform: translateY(-600px); } } }
+      transform: translateY(-450px); } } }
 
 @media (max-width: 560px) {
   footer {
@@ -939,13 +941,11 @@ ul.nav-links {
   @keyframes testHero {
     0% {
       transform: translateY(190px); }
-    2%, 24% {
+    2%, 30% {
       transform: translateY(0px); }
-    27%, 48% {
+    33%, 63% {
       transform: translateY(-195px); }
-    51%, 72% {
-      transform: translateY(-390px); }
-    75%, 98% {
-      transform: translateY(-585px); }
+    66%, 97% {
+      transform: translateY(-360px); }
     100% {
-      transform: translateY(-780px); } } }
+      transform: translateY(-585px); } } }

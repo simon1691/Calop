@@ -65,7 +65,7 @@
 .lmd {
     header {
         background-size: cover;
-        background-position: top right;
+        background-position: center right;
         background-repeat: no-repeat;
         height: 50vh;
         min-height: 35vh;
@@ -84,7 +84,10 @@
 }
 
 .expedite {
-    header { background-image: url("../imgs/expedite-header.jpg"); }
+    header {
+        background-image: url("../imgs/expedite-header.jpg");
+        background-position: center;
+    }
 }
 
 .lmd {
