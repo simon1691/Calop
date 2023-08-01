@@ -17,11 +17,13 @@
                 li {
                     margin-bottom: 2rem;
                     font-size: $fnt-lg;
+                    color: black;
 
                     .about-member-btn {
                         position: relative;
                         border:none;
                         background-color: transparent;
+                        color: black;
 
                         &:hover { font-weight:bold; }
                     }
