@@ -539,11 +539,13 @@ header {
     display: none; }
   .about-page main .dept-section-grid .dept-menu li {
     margin-bottom: 2rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    color: black; }
     .about-page main .dept-section-grid .dept-menu li .about-member-btn {
       position: relative;
       border: none;
-      background-color: transparent; }
+      background-color: transparent;
+      color: black; }
       .about-page main .dept-section-grid .dept-menu li .about-member-btn:hover {
         font-weight: bold; }
     .about-page main .dept-section-grid .dept-menu li .about-member-btn[aria-expanded=true] {
