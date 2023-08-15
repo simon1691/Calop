@@ -32,6 +32,73 @@
     gtag('config', 'G-59DEY9XKPF');
     </script>
 <!-- End of HubSpot Embed Code -->
+
+<!-- overwriting hbp form styles -->
+<script type="text/javascript">
+    window.onload = function () {
+        setTimeout(() => {
+            let getFormIframe = document.getElementById("hs-form-iframe-0")
+            let css = getFormIframe.contentDocument;
+            console.log(css.body)
+            css.body.innerHTML = css.body.innerHTML + `<style>
+                .hs-form {width: 75% !important; margin: auto !important}
+                .hs-custom-style fieldset {display:flex !important; justify-content: center !important; gap: 1.5rem !important}
+                .hs-custom-style fieldset div {width:100% !important; margin-bottom: 1.5rem !important}
+                .hs-custom-style fieldset label {font-weight:bold !important}
+                .hs-submit .actions {text-align: center !important; padding-top: 0 !important}
+                .hs-custom-style fieldset .input { margin-bottom: 0px !important; }
+                .hs-custom-style fieldset .input input.hs-input{
+                        width: 100%;
+                        border: 0.5px solid #000;
+                        border-radius: 2px;
+                        padding: 0.3rem 0.5rem !important;
+                        font-family: 'Roboto', sans-serif;
+                        font-size: 14px;
+                        color: #000;
+                    }
+                .hs-custom-style fieldset .input .hs-input:not([type=file]) {
+                    background-color: #ffffff ;
+                }
+                .inputs-list{
+                    padding: 0 !important;
+                }
+                .hs-custom-style fieldset .hs-error-msgs label{
+                    margin-top: 0.5rem;
+                    font-weight: normal !important;
+                }
+                .hs-field-desc{padding: 0 !important}
+
+                .actions .hs-button {
+                    font-size: 18px !important;
+                    font-weight: 700!important;
+                    padding: 15px 22px !important;
+                    line-height: 100% !important;
+                    border-radius: 0.3rem !important;
+                    position: relative;
+                    font-family: 'Roboto', sans-serif !important;
+                }
+
+                .actions .hs-button:hover {
+                    background: #95C11F !important;
+                    border-color: #95C11F !important;
+                }
+
+                @media screen and (max-width: 768px){
+                    .hs-form {width: 100% !important; margin: auto !important}
+                    .hs-custom-style fieldset {
+                        display:flex !important;
+                        flex-direction: column;
+                        gap: 0 !important;
+                    }
+
+                    .hs-custom-style fieldset .input {
+                        margin: 0!important
+                    }
+                }
+            </style>`
+        }, 200);
+    }
+</script>
 </head>
 
 <body>
@@ -368,19 +435,17 @@
                     <h1 class="section-title">Get a Freight Quote</h1>                
                     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/embed/v2.js"></script>
                     <script>
-                        hbspt.forms.create({
-                            region: "na1",
-                            portalId: "5569533",
-                            formId: "27cd269b-f058-4d58-a6a3-8ad12dc8549a"
-                        });
+                    hbspt.forms.create({
+                        region: "na1",
+                        portalId: "5569533",
+                        formId: "27cd269b-f058-4d58-a6a3-8ad12dc8549a"
+                    });
                     </script>
                 </div>
             </div>
             
         </section>
-
-      
-        <!-- Operations Section-->
+        <!-- Feedback Section-->
         <section class="reviews section-padding-y container">
             <h1 class="section-title">What Our Customers Say About Us</h1>
             <div class="row m-0 p-0 justify-content-center">
@@ -649,70 +714,4 @@
     </div>
 
 </body>
-<script type="text/javascript">
-    window.onload = function () {
-        setTimeout(() => {
-            let getFormIframe = document.getElementById("hs-form-iframe-0")
-            let css = getFormIframe.contentDocument;
-            console.log(css.body)
-            css.body.innerHTML = css.body.innerHTML + `<style>
-                .hs-form {width: 75% !important; margin: auto !important}
-                .hs-custom-style fieldset {display:flex !important; justify-content: center !important; gap: 1.5rem !important}
-                .hs-custom-style fieldset div {width:100% !important; margin-bottom: 1.5rem !important}
-                .hs-custom-style fieldset label {font-weight:bold !important}
-                .hs-submit .actions {text-align: center !important; padding-top: 0 !important}
-                .hs-custom-style fieldset .input { margin-bottom: 0px !important; }
-                .hs-custom-style fieldset .input input.hs-input{
-                        width: 100%;
-                        border: 0.5px solid #000;
-                        border-radius: 2px;
-                        padding: 0.3rem 0.5rem !important;
-                        font-family: 'Roboto', sans-serif;
-                        font-size: 14px;
-                        color: #000;
-                    }
-                .hs-custom-style fieldset .input .hs-input:not([type=file]) {
-                    background-color: #ffffff ;
-                }
-                .inputs-list{
-                    padding: 0 !important;
-                }
-                .hs-custom-style fieldset .hs-error-msgs label{
-                    margin-top: 0.5rem;
-                    font-weight: normal !important;
-                }
-                .hs-field-desc{padding: 0 !important}
-
-                .actions .hs-button {
-                    font-size: 18px !important;
-                    font-weight: 700!important;
-                    padding: 15px 22px !important;
-                    line-height: 100% !important;
-                    border-radius: 0.3rem !important;
-                    position: relative;
-                    font-family: 'Roboto', sans-serif !important;
-                }
-
-                .actions .hs-button:hover {
-                    background: #95C11F !important;
-                    border-color: #95C11F !important;
-                }
-
-                @media screen and (max-width: 768px){
-                    .hs-form {width: 100% !important; margin: auto !important}
-                    .hs-custom-style fieldset {
-                        display:flex !important;
-                        flex-direction: column;
-                        gap: 0 !important;
-                    }
-
-                    .hs-custom-style fieldset .input {
-                        margin: 0!important
-                    }
-                }
-            </style>`
-        }, 200);
-    }
-</script>
-
 </html>
