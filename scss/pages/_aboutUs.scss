@@ -5,54 +5,16 @@
     }
 
     main {
-        .dept-section-grid {
-            grid-template-columns: 1fr 3fr;
-            gap: 3rem;
-
-            .test{
-                display: none;
-            }
-
-            .dept-menu {
-                li {
-                    margin-bottom: 2rem;
-                    font-size: $fnt-lg;
-                    color: black;
-
-                    .about-member-btn {
-                        position: relative;
-                        border:none;
-                        background-color: transparent;
-                        color: black;
-
-                        &:hover { font-weight:bold; }
-                    }
-                    .about-member-btn[aria-expanded=true] {
-                        font-weight: bold;
-                        &::before {
-                            content: "";
-                            position: absolute;
-                            bottom:-4px;
-                            width:100%;
-                            height: 3px;
-                            background-color: $accent-color;
-                            transform: scaleX(1);
-                            transform-origin: left;
-
-                            transition: transform 150ms ease;
-                        }
-                    }
-                }
-            }
-
+        .members-section{
+            display: flex;
+            gap: 40px;
+            flex-wrap: wrap;
+            justify-content: center;
             .dept-members-container {
-                display: grid;
-                grid-template-columns: repeat(2, 1fr);
-                gap: 3rem 6rem;
-
+                display: flex;
+                flex-direction: column;
                 .dept-member {
-                    gap: 1rem 0;
-
+    
                     .member-img{
                         background-color: $light-gray-color;
                         width: 100%;
@@ -62,13 +24,13 @@
                     }
                     .member-info {
                         gap: 1rem;
-
+    
                         h3{
-                            margin-top: 0rem;
+                            margin-top: 1rem;
                             margin-bottom: 0.2rem;
                             font-size: $fnt-lg;
                         }
-
+    
                         h4{
                             margin:0;
                             font-size: $fnt-sm;
@@ -77,6 +39,7 @@
                 }
             }
         }
+        
     }
 }
 
