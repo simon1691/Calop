@@ -13,8 +13,9 @@
             .dept-members-container {
                 display: flex;
                 flex-direction: column;
+                max-width: 50%;
                 .dept-member {
-    
+                    max-width: 400px;
                     .member-img{
                         background-color: $light-gray-color;
                         width: 100%;
