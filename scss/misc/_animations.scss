@@ -81,13 +81,13 @@
 /* aboutUs Header Animation*/
 .aboutUs-animation {
     animation: aboutUsHero 30s ease-in-out infinite;
-    background-image: url("../imgs/aboutUs3.png");
+    background-image: url("../imgs/aboutUs3.webp");
     @include header-animation-setup;
 }
 
 @keyframes aboutUsHero {
     0%, 30% {
-        background-image: url("../imgs/aboutUs3.png");
+        background-image: url("../imgs/aboutUs3.webp");
     }
 
     33%, 63% {

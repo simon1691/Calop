@@ -64,6 +64,17 @@
                 }
             }
         }
+        //about us
+        .about-page{
+            main{
+                .members-section{
+                    gap: 40px 20px;
+                    .dept-members-container{
+                        max-width: 45%;
+                    }
+                }
+            }
+        }
 }
 
     @media (max-width: 768px) {
@@ -196,6 +207,8 @@
                 }
             }
         }
+
+        
     }
 
 
@@ -536,6 +549,24 @@
             }
             .footer-social-container {
                 .footer-icon-social{ margin-right: 0 !important; }
+            }
+        }
+        
+        //about us
+        .about-page{
+            main{
+                .members-section{
+                    gap: 40px 0px;
+                    .dept-members-container{
+                        max-width: 100%;
+                        .dept-member{
+                            max-width: 100%;
+                           .member-img{
+                            height: auto;
+                           }
+                        }
+                    }
+                }
             }
         }
     }
