@@ -1,8 +1,14 @@
 
 .about-page {
     header {
+        background-size: cover;
+        background-position: center right;
+        background-repeat: no-repeat;
+        height: 50vh;
+        min-height: 35vh;
         .hero-title { line-height: 3.88rem; }
     }
+    .aboutUs-bg-header { background-image: url("../imgs/aboutUs3.webp");}
 
     main {
         .members-section{
