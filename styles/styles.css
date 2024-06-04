@@ -134,24 +134,6 @@ a:focus {
   66%, 100% {
     background-image: url("../imgs/operations-1.png"); } }
 
-/* aboutUs Header Animation*/
-.aboutUs-animation {
-  animation: aboutUsHero 30s ease-in-out infinite;
-  background-image: url("../imgs/aboutUs3.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  height: 55vh;
-  min-height: 50vh; }
-
-@keyframes aboutUsHero {
-  0%, 30% {
-    background-image: url("../imgs/aboutUs3.webp"); }
-  33%, 63% {
-    background-image: url("../imgs/aboutUs2.png"); }
-  66%, 100% {
-    background-image: url("../imgs/aboutUs1.png"); } }
-
 /*Partials*/
 .nav .dropdown .dropdown-toggle::after {
   color: #95C11F !important; }
@@ -514,23 +496,32 @@ header {
   min-height: 35vh; }
 
 .ftl header {
-  background-image: url("../imgs/ftl-header.jpg"); }
+  background-image: url("../imgs/ftl-header.webp"); }
 
 .ltl header {
-  background-image: url("../imgs/ltl-header.png"); }
+  background-image: url("../imgs/ltl-header.webp"); }
 
 .drayage header {
-  background-image: url("../imgs/drayage-header.png"); }
+  background-image: url("../imgs/drayage-header.webp"); }
 
 .expedite header {
-  background-image: url("../imgs/expedite-header.jpg");
+  background-image: url("../imgs/expedite-header.webp");
   background-position: center; }
 
 .lmd header {
-  background-image: url("../imgs/lmd-header.png"); }
+  background-image: url("../imgs/lmd-header.webp"); }
 
-.about-page header .hero-title {
-  line-height: 3.88rem; }
+.about-page header {
+  background-size: cover;
+  background-position: center right;
+  background-repeat: no-repeat;
+  height: 50vh;
+  min-height: 35vh; }
+  .about-page header .hero-title {
+    line-height: 3.88rem; }
+
+.about-page .aboutUs-bg-header {
+  background-image: url("../imgs/aboutUs3.webp"); }
 
 .about-page main .members-section {
   display: flex;
@@ -889,6 +880,8 @@ ul.nav-links {
       width: 100%; }
     footer .footer-social-container .footer-icon-social {
       margin-right: 0 !important; }
+  .about-page header {
+    background-position: center center; }
   .about-page main .members-section {
     gap: 40px 0px; }
     .about-page main .members-section .dept-members-container {
